@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "X0pb5U8ZEqLWAevGIyXAGQ8NSlvfzovf6Dt69iBmrcNlvG8+WDyCU4vrgig4Zb4mx2VohavRHrVlWBPMPm2VcQ==",
+  "dgSpecHash": "+DWT4mWIm+d+6p7l5eqlVhMWveXzC+whu6hoFFJmx7GNOj2B0j7LlOFwk4VAlvBScDYpjHqQ+ndQocK7j2k0ig==",
   "success": true,
   "projectFilePath": "D:\\Projects\\GitHub\\AdaMedicine.Net\\AdaMedicine.Net\\Libraries\\AdaMedicine.Net.Core\\AdaMedicine.Net.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ihsan cungay\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ihsan cungay\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+    "C:\\Users\\ihsan cungay\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ihsan cungay\\.nuget\\packages\\microsoft.extensions.configuration.binder\\5.0.0\\microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
+    "C:\\Users\\ihsan cungay\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ihsan cungay\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ihsan cungay\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\ihsan cungay\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\ihsan cungay\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

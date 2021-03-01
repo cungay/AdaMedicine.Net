@@ -1,0 +1,12 @@
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Net.Infrastructure\bin\Debug\netcoreapp3.1\AdaMedicine.Net.Infrastructure.deps.json
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Net.Infrastructure\bin\Debug\netcoreapp3.1\AdaMedicine.Net.Infrastructure.dll
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Net.Infrastructure\bin\Debug\netcoreapp3.1\AdaMedicine.Net.Infrastructure.pdb
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Net.Infrastructure\bin\Debug\netcoreapp3.1\AdaMedicine.Net.Core.dll
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Net.Infrastructure\bin\Debug\netcoreapp3.1\AdaMedicine.Net.Core.pdb
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Net.Infrastructure\obj\Debug\netcoreapp3.1\AdaMedicine.Net.Infrastructure.csprojAssemblyReference.cache
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Net.Infrastructure\obj\Debug\netcoreapp3.1\AdaMedicine.Net.Infrastructure.AssemblyInfoInputs.cache
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Net.Infrastructure\obj\Debug\netcoreapp3.1\AdaMedicine.Net.Infrastructure.AssemblyInfo.cs
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Net.Infrastructure\obj\Debug\netcoreapp3.1\AdaMedicine.Net.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Net.Infrastructure\obj\Debug\netcoreapp3.1\AdaMedicine.Net.Infrastructure.csproj.CopyComplete
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Net.Infrastructure\obj\Debug\netcoreapp3.1\AdaMedicine.Net.Infrastructure.dll
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Net.Infrastructure\obj\Debug\netcoreapp3.1\AdaMedicine.Net.Infrastructure.pdb

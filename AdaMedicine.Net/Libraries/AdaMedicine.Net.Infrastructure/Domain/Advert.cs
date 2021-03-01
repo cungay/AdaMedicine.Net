@@ -1,6 +1,7 @@
 ﻿using System;
+using AdaMedicine.Net.Core;
 
-namespace AdaMedicine.Net.Core.Domain
+namespace AdaMedicine.Net.Infrastructure.Domain
 {
     public partial class Advert : BaseEntity
     {

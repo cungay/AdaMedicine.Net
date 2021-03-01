@@ -4,4 +4,20 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="ComponentModel\Permission\**" />
+    <Compile Remove="ComponentModel\PropertyGrid\**" />
+    <Compile Remove="ComponentModel\Upload\**" />
+    <EmbeddedResource Remove="ComponentModel\Permission\**" />
+    <EmbeddedResource Remove="ComponentModel\PropertyGrid\**" />
+    <EmbeddedResource Remove="ComponentModel\Upload\**" />
+    <None Remove="ComponentModel\Permission\**" />
+    <None Remove="ComponentModel\PropertyGrid\**" />
+    <None Remove="ComponentModel\Upload\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+  </ItemGroup>
 </Project>

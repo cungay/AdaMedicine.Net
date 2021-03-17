@@ -1,13 +1,9 @@
-﻿using Ege.Net.Data;
-using System;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace AdaMedicine.ServiceModel.Domain
 {
-    public class Hospital : IEntity<int>
+    public class Hospital : BaseEntity
     {
-        public int Id { get; set; }
-
         public string Title { get; set; }
 
         public string Code { get; set; }
@@ -41,20 +37,5 @@ namespace AdaMedicine.ServiceModel.Domain
         public int? NeighborhoodId { get; set; }
 
         public string Address { get; set; }
-
-        [IgnoreDataMember]
-        public int DisplayOrder { get; set; }
-
-        [IgnoreDataMember]
-        public bool Published { get; set; }
-
-        [IgnoreDataMember]
-        public bool Deleted { get; set; }
-
-        [IgnoreDataMember]
-        public DateTime CreatedOnUtc { get; set; }
-
-        [IgnoreDataMember]
-        public DateTime UpdatedOnUtc { get; set; }
     }
 }

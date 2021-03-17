@@ -1,13 +1,10 @@
-﻿using Ege.Net.Data;
-using System;
+﻿using Ege.Net.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace AdaMedicine.ServiceModel.Domain
 {
-    public class HospitalStaff : IEntity<int>
+    public class HospitalStaff : BaseEntity
     {
-        public int Id { get; set; }
-
         [IgnoreDataMember]
         public int HospitalId { get; set; }
 
@@ -33,17 +30,7 @@ namespace AdaMedicine.ServiceModel.Domain
 
         public string ImageUrl { get; set; }
 
-        [IgnoreDataMember]
-        public bool Published { get; set; }
-
-        [IgnoreDataMember]
-        public bool Deleted { get; set; }
-
-        [IgnoreDataMember]
-        public DateTime CreatedOnUtc { get; set; }
-
-        [IgnoreDataMember]
-        public DateTime UpdatedOnUtc { get; set; }
-
+        [Ignore]
+        public override int DisplayOrder { get; set; }
     }
 }

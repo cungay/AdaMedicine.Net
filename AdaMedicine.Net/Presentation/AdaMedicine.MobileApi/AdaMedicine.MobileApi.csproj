@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="5.0.0" />
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Touch Files="App_Offline.htm" AlwaysCreate="true" />
+  </Target>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Delete Files="App_Offline.htm" />
+  </Target>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\AdaMedicine.ServiceModel\AdaMedicine.ServiceModel.csproj" />
+    <ProjectReference Include="..\..\Libraries\AdaMedicine.Services\AdaMedicine.Services.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="Ege.Net">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Ege.Net.Api.OpenApi">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Api\Ege.Api.OpenApi\bin\Debug\netstandard2.0\Ege.Net.Api.OpenApi.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Ege.Net.Client">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.Client.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Ege.Net.Common">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.Common.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Ege.Net.Interfaces">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.Interfaces.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Ege.Net.Orm">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Orm\Ege.Net.Orm.SqlServer\bin\Debug\netstandard2.0\Ege.Net.Orm.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Ege.Net.Orm.SqlServer">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Orm\Ege.Net.Orm.SqlServer\bin\Debug\netstandard2.0\Ege.Net.Orm.SqlServer.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Ege.Net.Server">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net.Server\bin\Debug\netstandard2.0\Ege.Net.Server.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Ege.Net.Text">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.Text.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>

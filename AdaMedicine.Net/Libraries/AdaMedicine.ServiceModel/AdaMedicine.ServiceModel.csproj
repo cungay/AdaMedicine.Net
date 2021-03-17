@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Extensions\ModelExtensions.cs" />
+    <Compile Remove="Query\HospitalQuery.cs" />
+    <Compile Remove="Request\FindHospitals.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
+    <!--<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />-->
+    <Folder Include="Extensions\" />
+    <Folder Include="Query\" />
+    <Folder Include="Response\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="Ege.Net">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ege.Net.Common">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ege.Net.Interfaces">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Ege.Net.Text">
+      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.Text.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

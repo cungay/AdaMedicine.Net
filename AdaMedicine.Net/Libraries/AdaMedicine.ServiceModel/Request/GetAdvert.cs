@@ -7,6 +7,6 @@ namespace AdaMedicine.ServiceModel.Request
     public class GetAdvert : IReturn<SingleResponse<AdvertDto>>
     {
         [ApiMember(ParameterType = "path", DataType = "integer", Format = "int32", IsRequired = false, Route = "/adverts/{id}")]
-        public int? Id { get; set; }
+        public int Id { get; set; }
     }
 }

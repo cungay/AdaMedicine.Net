@@ -2,7 +2,6 @@
 
 namespace AdaMedicine.ServiceModel.Dto
 {
-    [DataContract]
     public class AdvertDto
     {
         public virtual int? Id { get; set; }

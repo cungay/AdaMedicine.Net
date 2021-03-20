@@ -20,8 +20,9 @@ namespace AdaMedicine.MobileApi.Infrastructure
 
             SetConfig(new HostConfig
             {
+                HandlerFactoryPath = "api",
                 DebugMode = AppSettings.Get(nameof(HostConfig.DebugMode), true),
-                DefaultRedirectPath = "/metadata",
+                //DefaultRedirectPath = "/metadata",
                 DefaultContentType = MimeTypes.Json,
             });
 

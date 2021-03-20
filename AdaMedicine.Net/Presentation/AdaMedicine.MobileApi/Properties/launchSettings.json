@@ -4,6 +4,7 @@
     "anonymousAuthentication": true,
     "iis": {
       "applicationUrl": "https://localhost:1001",
+      //"applicationUrl": "https://adatip.btkurumsal.xyz/metadata",
       "sslPort": 0
     },
     "iisExpress": {
@@ -34,7 +35,7 @@
       "commandName": "IIS",
       "launchUrl": "metadata",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Prod"
       },
       "sqlDebugging": false,
       "nativeDebugging": true,

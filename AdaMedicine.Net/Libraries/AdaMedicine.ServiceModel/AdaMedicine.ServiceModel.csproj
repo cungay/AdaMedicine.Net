@@ -15,7 +15,6 @@
     <!--<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />-->
     <Folder Include="Extensions\" />
     <Folder Include="Query\" />
-    <Folder Include="Response\" />
   </ItemGroup>
   
   <ItemGroup>

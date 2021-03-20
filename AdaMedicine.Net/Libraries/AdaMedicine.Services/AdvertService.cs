@@ -9,13 +9,14 @@ namespace AdaMedicine.Services
 {
     public class AdvertService : RestService
     {
-        public async Task<SingleResponse<AdvertDto>> Get(GetAdvert request)
+        public async Task<SingleResponse<AdvertDtoWithHospital>> Get(GetAdvert request)
         {
-            var response = new SingleResponse<AdvertDto>();
+            var response = new SingleResponse<AdvertDtoWithHospital>();
             var query = Db.From<Advert>();
             if (!request.Id.IsNull())
                 query.Where(p => p.Id == request.Id);
-            response.Result = await Task.FromResult(Db.SingleAsync(query).Result.ConvertTo<AdvertDto>()) ?? new AdvertDto();
+            response.Result = await Task.FromResult(Db.SingleAsync(query).Result.ConvertTo<AdvertDtoWithHospital>()) 
+                ?? new AdvertDtoWithHospital();
             return response;
         }
 
@@ -26,6 +27,7 @@ namespace AdaMedicine.Services
             if (!request.HospitalId.IsNull())
                 query.Where(p => p.HospitalId == request.HospitalId);
             response.Result = await Task.FromResult(Db.SelectAsync(query).Result.ConvertAll(p => p.ConvertTo<AdvertDto>()));
+            //response.Result.Each(p => p.HospitalId = null);
             return response;
         }
     }

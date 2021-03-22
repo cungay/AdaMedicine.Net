@@ -1,8 +1,10 @@
 ﻿using Ege.Net;
+using AdaMedicine.ServiceModel.Dto;
 
 namespace AdaMedicine.Services
 {
-    public class UnitCategoryService : RestService
+    public class UnitCategoryService : IReturn<ListResponse<HospitalUnit>>
     {
+
     }
 }

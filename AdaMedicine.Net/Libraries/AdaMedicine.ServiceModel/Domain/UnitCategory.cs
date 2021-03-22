@@ -1,8 +1,11 @@
-﻿namespace AdaMedicine.ServiceModel.Domain
+﻿using Ege.Net.DataAnnotations;
+
+namespace AdaMedicine.ServiceModel.Domain
 {
     public partial class UnitCategory : BaseEntity
     {
-        public int? SubCategoryId { get; set; }
+        [Alias("SubCategoryId")]
+        public int? CategoryId { get; set; }
 
         public string CategoryName { get; set; }
         

@@ -1,6 +1,6 @@
 ﻿namespace AdaMedicine.ServiceModel.Domain
 {
-    public class Advert : BaseEntity
+    public partial class Advert : BaseEntity
     {
         public int HospitalId { get; set; }
 

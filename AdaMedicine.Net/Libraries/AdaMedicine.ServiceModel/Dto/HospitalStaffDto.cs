@@ -1,4 +1,6 @@
-﻿namespace AdaMedicine.ServiceModel.Dto
+﻿using Ege.Net.DataAnnotations;
+
+namespace AdaMedicine.ServiceModel.Dto
 {
     public class HospitalStaffDto
     {
@@ -27,5 +29,10 @@
         public string Certifications { get; set; }
 
         public string ImageUrl { get; set; }
+    }
+
+    [Alias("HospitalStaff")]
+    public class HospitalStaffQueryDto : HospitalStaffDto
+    {
     }
 }

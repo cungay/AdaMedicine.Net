@@ -1,11 +1,13 @@
-﻿namespace AdaMedicine.ServiceModel.Domain
+﻿namespace AdaMedicine.ServiceModel.Dto
 {
-    public partial class UnitCategory : BaseEntity
+    public class UnitCategoryDto
     {
-        public int? SubCategoryId { get; set; }
+        public int? Id { get; set; }
+
+        public int? CategoryId { get; set; }
 
         public string CategoryName { get; set; }
-        
+
         public string ShortName { get; set; }
 
         public string Description { get; set; }

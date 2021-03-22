@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UnitCategoryService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AdaMedicine.ServiceModel\AdaMedicine.ServiceModel.csproj" />
   </ItemGroup>
 

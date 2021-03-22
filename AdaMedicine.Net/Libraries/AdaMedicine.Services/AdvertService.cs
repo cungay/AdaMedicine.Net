@@ -15,6 +15,8 @@ namespace AdaMedicine.Services
             var query = Db.From<Advert>();
             if (!request.Id.IsNull())
                 query.Where(p => p.Id == request.Id);
+            query.Where(p => p.Published);
+            query.Where(p => !p.Deleted);
             response.Result = await Task.FromResult(Db.SingleAsync(query).Result.ConvertTo<AdvertDtoWithHospital>()) 
                 ?? new AdvertDtoWithHospital();
             return response;
@@ -26,8 +28,10 @@ namespace AdaMedicine.Services
             var query = Db.From<Advert>();
             if (!request.HospitalId.IsNull())
                 query.Where(p => p.HospitalId == request.HospitalId);
+            query.Where(p => p.Published);
+            query.Where(p => !p.Deleted);
+            query.OrderBy(p => p.Id);
             response.Result = await Task.FromResult(Db.SelectAsync(query).Result.ConvertAll(p => p.ConvertTo<AdvertDto>()));
-            //response.Result.Each(p => p.HospitalId = null);
             return response;
         }
     }

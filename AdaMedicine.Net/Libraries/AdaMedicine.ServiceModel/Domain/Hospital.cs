@@ -2,7 +2,7 @@
 
 namespace AdaMedicine.ServiceModel.Domain
 {
-    public class Hospital : BaseEntity
+    public partial class Hospital : BaseEntity
     {
         public string Title { get; set; }
 

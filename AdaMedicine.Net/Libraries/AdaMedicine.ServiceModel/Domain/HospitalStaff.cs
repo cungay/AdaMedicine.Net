@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 
 namespace AdaMedicine.ServiceModel.Domain
 {
-    public class HospitalStaff : BaseEntity
+    public partial class HospitalStaff : BaseEntity
     {
         [IgnoreDataMember]
         public int HospitalId { get; set; }
@@ -12,7 +12,7 @@ namespace AdaMedicine.ServiceModel.Domain
 
         public string Name { get; set; }
 
-        public int YearOfBirth { get; set; }
+        public int? YearOfBirth { get; set; }
 
         public string Languages { get; set; }
 
@@ -31,6 +31,6 @@ namespace AdaMedicine.ServiceModel.Domain
         public string ImageUrl { get; set; }
 
         [Ignore]
-        public override int DisplayOrder { get; set; }
+        public virtual int DisplayOrder { get; set; }
     }
 }

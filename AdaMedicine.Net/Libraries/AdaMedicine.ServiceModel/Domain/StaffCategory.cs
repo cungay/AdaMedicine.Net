@@ -1,6 +1,6 @@
 ﻿namespace AdaMedicine.ServiceModel.Domain
 {
-    public class StaffCategory : BaseEntity
+    public partial class StaffCategory : BaseEntity
     {
         public string CategoryName { get; set; }
 

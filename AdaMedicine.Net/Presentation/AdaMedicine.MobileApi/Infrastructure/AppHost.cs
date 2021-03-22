@@ -22,23 +22,18 @@ namespace AdaMedicine.MobileApi.Infrastructure
             {
                 HandlerFactoryPath = "api",
                 DebugMode = AppSettings.Get(nameof(HostConfig.DebugMode), true),
-                //DefaultRedirectPath = "/metadata",
                 DefaultContentType = MimeTypes.Json,
+                ApiVersion = "1.0"
             });
 
-            JsConfig.Init(new Config
-            {
-                TextCase = TextCase.Default,
-                //ExcludeDefaultValues = true,
-                //IncludeNullValues = true,
-                //IncludeNullValuesInDictionaries = true
-            });
+            JsConfig.Init(new Config { TextCase = TextCase.Default, });
 
             Plugins.Add(new AutoQueryFeature
             {
                 MaxLimit = 100,
                 IncludeTotal = true,
                 EnableAsync = true,
+                EnableAutoQueryViewer = true,
             });
 
             Plugins.Add(new OpenApiFeature());

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Ege.Net;
 
 namespace AdaMedicine.ServiceModel.Response
 {
-    public class UnitCategoryResponse
+    public class UnitCategoryResponse : RestResponse
     {
+
     }
 }

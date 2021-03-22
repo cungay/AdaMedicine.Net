@@ -31,8 +31,8 @@ namespace AdaMedicine.ServiceModel.Dto
         public string ImageUrl { get; set; }
     }
 
-    [Alias("HospitalStaff")]
-    public class HospitalStaffQueryDto : HospitalStaffDto
-    {
-    }
+    //[Alias("HospitalStaff")]
+    //public class HospitalStaffQueryDto : HospitalStaffDto
+    //{
+    //}
 }

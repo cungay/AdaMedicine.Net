@@ -92,6 +92,7 @@ StyleCopReport.xml
 *.svclog
 *.scc
 *.csv
+*.AssemblyReference.cache
 
 # Chutzpah Test files
 _Chutzpah*

@@ -16,12 +16,13 @@ namespace AdaMedicine.MobileApi.Infrastructure
 
         public override void Configure(Container container)
         {
-            container.Register<IDbConnectionFactory>(new OrmConnectionFactory(AppSettings.GetString("connectionStrings:dev"), SqlServerDialect.Provider));
+            container.Register<IDbConnectionFactory>(new OrmConnectionFactory(
+                AppSettings.GetString("connectionStrings:dev"), SqlServerDialect.Provider));
 
             SetConfig(new HostConfig
             {
-                HandlerFactoryPath = "api",
                 DebugMode = AppSettings.Get(nameof(HostConfig.DebugMode), true),
+                HandlerFactoryPath = "api",
                 DefaultContentType = MimeTypes.Json,
                 ApiVersion = "1.0"
             });

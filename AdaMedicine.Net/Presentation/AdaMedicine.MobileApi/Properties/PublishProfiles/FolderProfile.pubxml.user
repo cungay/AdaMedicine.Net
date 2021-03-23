@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\bin\Release\net5.0\publish\</_PublishTargetUrl>
-    <History>True|2021-03-19T11:53:04.9106282Z;True|2021-03-19T14:36:24.9025102+03:00;</History>
+    <History>True|2021-03-23T11:16:02.0001711Z;True|2021-03-19T14:53:04.9106282+03:00;True|2021-03-19T14:36:24.9025102+03:00;</History>
   </PropertyGroup>
 </Project>

@@ -5,7 +5,7 @@ namespace AdaMedicine.ServiceModel.Domain
     public partial class UnitCategory : BaseEntity
     {
         [Alias("SubCategoryId")]
-        public int? CategoryId { get; set; }
+        public int? UnitId { get; set; }
 
         public string CategoryName { get; set; }
         

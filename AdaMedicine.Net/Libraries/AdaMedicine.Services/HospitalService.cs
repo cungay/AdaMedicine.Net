@@ -14,8 +14,8 @@ namespace AdaMedicine.Services
         {
             var response = new SingleResponse<HospitalDto>();
             var query = Db.From<Hospital>();
-            if (!request.Id.IsNull())
-                query.Where(p => p.Id == request.Id);
+            if (!request.HospitalId.IsNull())
+                query.Where(p => p.Id == request.HospitalId);
             query.Where(p => p.Published);
             query.Where(p => !p.Deleted);
             response.Result = await Task.FromResult(Db.SingleAsync(query).Result.ConvertTo<HospitalDto>()) ?? new HospitalDto();

@@ -18,25 +18,12 @@ namespace AdaMedicine.Services
                 query.Where(p => p.Id == request.Id);
             query.Where(p => p.Published);
             query.Where(p => !p.Deleted);
-            response.Result = await Task.FromResult(Db.SingleAsync(query).Result.ConvertTo<HospitalStaffDto>()) ?? new HospitalStaffDto();
-            /*
-            if (response.Result is null)
-            {
-                response.Result = new HospitalStaffDto();
-                return new HttpResult(response);
-            }
-            return new HttpResult(response)
-            {
-                ResultScope = () => JsConfig.With(new Config
-                {
-                    IncludeNullValues = true,
-                })
-            };
-            */
+            response.Result = await Task.FromResult(Db.SingleAsync(query).Result.ConvertTo<HospitalStaffDto>()) 
+                ?? new HospitalStaffDto();
             return response;
         }
 
-        public async Task<ListResponse<HospitalStaffDto>> Get(GetHospitalStaffList request)
+        public async Task<ListResponse<HospitalStaffDto>> Get(GetAllHospitalStaff request)
         {
             var response = new ListResponse<HospitalStaffDto>();
             var query = Db.From<HospitalStaff>();

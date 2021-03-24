@@ -6,7 +6,7 @@
 
         public int? UnitId { get; set; }
 
-        public string CategoryName { get; set; }
+        public string UnitName { get; set; }
 
         public string ShortName { get; set; }
 

@@ -3,8 +3,9 @@ using AdaMedicine.ServiceModel.Dto;
 
 namespace AdaMedicine.ServiceModel.Request
 {
-    [Route("/hospitals/{hospitalid}/staff-categories/{categoryid}/staff-list", "GET", Summary = "Get all hospital staff by category id")]
-    public class GetHospitalStaffList : IReturn<ListResponse<HospitalStaffDto>>
+    [Route("/hospitals/{hospitalid}/staff-categories/{categoryid}/staff-list", "GET", 
+        Summary = "Get all hospital staff by category id")]
+    public class GetAllHospitalStaff : IReturn<ListResponse<HospitalStaffDto>>
     {
         public int? HospitalId { get; set; }
 

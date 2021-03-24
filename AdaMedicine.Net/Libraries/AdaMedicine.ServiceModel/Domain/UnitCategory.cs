@@ -7,7 +7,8 @@ namespace AdaMedicine.ServiceModel.Domain
         [Alias("SubCategoryId")]
         public int? UnitId { get; set; }
 
-        public string CategoryName { get; set; }
+        [Alias("CategoryName")]
+        public string UnitName { get; set; }
         
         public string ShortName { get; set; }
 

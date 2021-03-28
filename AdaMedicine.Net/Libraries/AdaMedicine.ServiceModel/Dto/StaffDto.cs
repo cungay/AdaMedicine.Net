@@ -1,16 +1,10 @@
-﻿using Ege.Net.DataAnnotations;
-
-namespace AdaMedicine.ServiceModel.Dto
+﻿namespace AdaMedicine.ServiceModel.Dto
 {
-    public class HospitalStaffDto
+    public class StaffDto
     {
         public int? Id { get; set; }
 
-        public int? HospitalId { get; set; }
-
-        public int? StaffCategoryId { get; set; }
-
-        public string Name { get; set; }
+        public string StaffName { get; set; }
 
         public int? YearOfBirth { get; set; }
 
@@ -30,9 +24,4 @@ namespace AdaMedicine.ServiceModel.Dto
 
         public string ImageUrl { get; set; }
     }
-
-    //[Alias("HospitalStaff")]
-    //public class HospitalStaffQueryDto : HospitalStaffDto
-    //{
-    //}
 }

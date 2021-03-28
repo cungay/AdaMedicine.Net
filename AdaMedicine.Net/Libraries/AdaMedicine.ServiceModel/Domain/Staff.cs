@@ -1,16 +1,8 @@
-﻿using Ege.Net.DataAnnotations;
-using System.Runtime.Serialization;
-
-namespace AdaMedicine.ServiceModel.Domain
+﻿namespace AdaMedicine.ServiceModel.Domain
 {
-    public partial class HospitalStaff : BaseEntity
+    public partial class Staff : BaseEntity
     {
-        [IgnoreDataMember]
-        public int HospitalId { get; set; }
-
-        public int StaffCategoryId { get; set; }
-
-        public string Name { get; set; }
+        public string StaffName { get; set; }
 
         public int? YearOfBirth { get; set; }
 
@@ -29,8 +21,5 @@ namespace AdaMedicine.ServiceModel.Domain
         public string Certifications { get; set; }
 
         public string ImageUrl { get; set; }
-
-        [Ignore]
-        public virtual int DisplayOrder { get; set; }
     }
 }

@@ -1,4 +1,7 @@
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Release\net5.0\PubTmp\Out\AdaMedicine.MobileApi.exe
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Release\net5.0\PubTmp\Out\wwwroot\sql\Get_Hospital_Units.sql
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Release\net5.0\PubTmp\Out\wwwroot\sql\Get_Staff_Categories.sql
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Release\net5.0\PubTmp\Out\wwwroot\sql\Get_Staff_List.sql
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Release\net5.0\PubTmp\Out\web.config
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Release\net5.0\PubTmp\Out\appsettings.json

@@ -8,6 +8,6 @@
 
         public string ShortName { get; set; }
 
-        public int? StaffCount { get; set; }
+        //public int? StaffCount { get; set; }
     }
 }

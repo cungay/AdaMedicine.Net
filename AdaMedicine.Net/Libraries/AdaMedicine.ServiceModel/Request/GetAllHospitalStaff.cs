@@ -5,7 +5,7 @@ namespace AdaMedicine.ServiceModel.Request
 {
     [Route("/hospitals/{hospitalid}/staff-categories/{categoryid}/staff-list", "GET", 
         Summary = "Get all hospital staff by category id")]
-    public class GetAllHospitalStaff : IReturn<ListResponse<HospitalStaffDto>>
+    public class GetAllHospitalStaff : IReturn<ListResponse<StaffDto>>
     {
         public int? HospitalId { get; set; }
 

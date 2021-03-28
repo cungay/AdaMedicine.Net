@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "fe9152fe-b7a1-47cc-bc42-37522cf68ee3",
+		"name": "Ada Medicine Mobile Api",
+		"description": "Ada medicine mobile api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Adverts",
+			"item": [
+				{
+					"name": "/adverts/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/adverts/1",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"adverts",
+								"1"
+							]
+						},
+						"description": "Get advert by id"
+					},
+					"response": []
+				}
+			],
+			"description": "Adverts actions"
+		},
+		{
+			"name": "hospitals",
+			"item": [
+				{
+					"name": "/hospitals/{hospitalid}/adverts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/hospitals/1/adverts",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"hospitals",
+								"1",
+								"adverts"
+							]
+						},
+						"description": "Get all adverts by hospital id"
+					},
+					"response": []
+				},
+				{
+					"name": "/hospitals/{hospitalid}/units",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/hospitals/1/units",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"hospitals",
+								"1",
+								"units"
+							]
+						},
+						"description": "Get all hospital units"
+					},
+					"response": []
+				},
+				{
+					"name": "/hospitals/{hospitalid}/staff-categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/hospitals/1/staff-categories",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"hospitals",
+								"1",
+								"staff-categories"
+							]
+						},
+						"description": "Get all staff categories by hospital id"
+					},
+					"response": []
+				},
+				{
+					"name": "/hospitals/{hospitalid}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/hospitals/1",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"hospitals",
+								"1"
+							]
+						},
+						"description": "Get hospital by id"
+					},
+					"response": []
+				},
+				{
+					"name": "/hospitals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/hospitals",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"hospitals"
+							]
+						},
+						"description": "Get all hospitals"
+					},
+					"response": []
+				},
+				{
+					"name": "/hospitals/{hospitalid}/staff-categories/{categoryid}/staff-list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/hospitals/1/staff-categories/1/staff-list?jsconfig=inv",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"hospitals",
+								"1",
+								"staff-categories",
+								"1",
+								"staff-list"
+							],
+							"query": [
+								{
+									"key": "jsconfig",
+									"value": "inv"
+								}
+							]
+						},
+						"description": "Get all hospital staff by category id"
+					},
+					"response": []
+				}
+			],
+			"description": "Hospitals actions"
+		},
+		{
+			"name": "hospital-staff",
+			"item": [
+				{
+					"name": "/hospital-staff/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/hospital-staff/1",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"hospital-staff",
+								"1"
+							]
+						},
+						"description": "Get hospital staff by id"
+					},
+					"response": []
+				},
+				{
+					"name": "/hospital-staff/{id}?jsconfig=inv",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/hospital-staff/1?jsconfig=inv",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"hospital-staff",
+								"1"
+							],
+							"query": [
+								{
+									"key": "jsconfig",
+									"value": "inv"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Hospital staff actions"
+		},
+		{
+			"name": "hospital-units",
+			"item": [
+				{
+					"name": "/hospital-units",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/hospital-units",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"hospital-units"
+							]
+						},
+						"description": "Get all hospital units"
+					},
+					"response": []
+				},
+				{
+					"name": "/hospital-units/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/hospital-units/1",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"hospital-units",
+								"1"
+							]
+						},
+						"description": "Get all hospital units by id"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "staff-categories",
+			"item": [
+				{
+					"name": "/staff-categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/staff-categories",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"staff-categories"
+							]
+						},
+						"description": "Get all staff categories"
+					},
+					"response": []
+				},
+				{
+					"name": "/staff-categories/{Id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://adatip.btkurumsal.xyz/api/staff-categories",
+							"protocol": "http",
+							"host": [
+								"adatip",
+								"btkurumsal",
+								"xyz"
+							],
+							"path": [
+								"api",
+								"staff-categories"
+							]
+						},
+						"description": "Get staff category by id"
+					},
+					"response": []
+				}
+			],
+			"description": "Staff category actions"
+		}
+	]
+}

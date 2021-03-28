@@ -12,7 +12,7 @@ namespace AdaMedicine.Services
         public async Task<ListResponse<StaffCategoryDto>> Get(GetStaffCategories request)
         {
             var response = new ListResponse<StaffCategoryDto>();
-            var sqlQuery = GetSqlQueryFromFile(SqlFileNames.Get_Hospital_Staff_Categories_By_Hospital_Id);
+            var sqlQuery = GetSqlQueryFromFile(SqlFileNames.Get_Staff_Categories);
             response.Result = await Task.FromResult(
                 Db.SqlListAsync<StaffCategoryDto>(sqlQuery,
                 new {

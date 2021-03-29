@@ -1,6 +1,4 @@
-﻿using System.Runtime.Serialization;
-
-namespace AdaMedicine.ServiceModel.Dto
+﻿namespace AdaMedicine.ServiceModel.Dto
 {
     public class AdvertDto
     {

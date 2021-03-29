@@ -13,13 +13,5 @@ namespace AdaMedicine.ServiceModel.Request
 
         //[QueryDbField(Template = "dbo.Fn_CleanValue({Field}) LIKE '%' + dbo.Fn_CleanValue({Value}) + '%'", Field = "Name")]
         //public string Name { get; set; }
-
-        //public int? YearOfBirth { get; set; }
-
-        //public string Languages { get; set; }
-
-        //public string Education { get; set; }
-
-        //public string Experience { get; set; }
     }
 }

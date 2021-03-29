@@ -24,13 +24,13 @@ namespace AdaMedicine.Services
                 }).Result.ConvertAll(p => p.ConvertTo<UnitCategoryDto>()));
             if (units.Count > 0) {
                 var details = await Task.FromResult(Db.SelectAsync(Db.From<UnitCategory>()
-                    .OrderBy(p => p.UnitName)
-                    .Where(p => Sql.In(p.UnitId, units.ConvertAll(p => p.Id)))
+                    .OrderBy(p => p.Name)
+                    .Where(p => Sql.In(p.CategoryId, units.ConvertAll(p => p.Id)))
                     .Where(p => p.Published && !p.Deleted)).Result.ConvertAll(p => p.ConvertTo<UnitCategoryDto>()));
-                var unitsLookUp = details.ToLookup(o => o.UnitId);
+                var unitsLookUp = details.ToLookup(o => o.CategoryId);
                 var dto = units.ConvertAll(o => new HospitalUnitDto {
-                    Unit = o,
-                    Details = unitsLookUp[o.Id].ToList()
+                    Category = o,
+                    Units = unitsLookUp[o.Id].ToList()
                 });
                 response.Result = dto;
             }

@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Compile Remove="Extensions\ModelExtensions.cs" />
-    <Compile Remove="Query\HospitalQuery.cs" />
     <Compile Remove="Request\FindHospitals.cs" />
   </ItemGroup>
 
@@ -14,7 +13,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
     <!--<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />-->
     <Folder Include="Extensions\" />
-    <Folder Include="Query\" />
   </ItemGroup>
   
   <ItemGroup>

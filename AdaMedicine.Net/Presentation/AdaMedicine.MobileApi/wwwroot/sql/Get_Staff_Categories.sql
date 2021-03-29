@@ -1,4 +1,4 @@
-﻿--declare @hospitalid INT = null
+﻿--declare @hospitalId INT = null
 --declare @categoryId INT = 2
 --declare @published BIT = 1
 --declare @deleted BIT = 0

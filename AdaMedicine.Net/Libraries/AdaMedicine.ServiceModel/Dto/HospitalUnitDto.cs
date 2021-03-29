@@ -7,12 +7,12 @@ namespace AdaMedicine.ServiceModel.Dto
     {
         public HospitalUnitDto()
         {
-            this.Unit = new UnitCategoryDto();
-            this.Details = new List<UnitCategoryDto>();
+            this.Category = new UnitCategoryDto();
+            this.Units = new List<UnitCategoryDto>();
         }
 
-        public UnitCategoryDto Unit { get; set; }
+        public UnitCategoryDto Category { get; set; }
 
-        public List<UnitCategoryDto> Details { get; set; }
+        public List<UnitCategoryDto> Units { get; set; }
     }
 }

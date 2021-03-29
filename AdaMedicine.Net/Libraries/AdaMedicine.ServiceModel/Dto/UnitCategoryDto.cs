@@ -4,7 +4,7 @@
     {
         public int? Id { get; set; }
 
-        public int? UnitId { get; set; }
+        public int? CategoryId { get; set; }
 
         public string UnitName { get; set; }
 

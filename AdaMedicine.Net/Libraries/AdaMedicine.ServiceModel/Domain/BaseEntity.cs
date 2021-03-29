@@ -1,5 +1,4 @@
 ﻿using Ege.Net.Data;
-using System.Runtime.Serialization;
 using System;
 
 namespace AdaMedicine.ServiceModel.Domain

@@ -1,5 +1,5 @@
-﻿using AdaMedicine.ServiceModel.Dto;
-using Ege.Net;
+﻿using Ege.Net;
+using AdaMedicine.ServiceModel.Dto;
 
 namespace AdaMedicine.ServiceModel.Request
 {

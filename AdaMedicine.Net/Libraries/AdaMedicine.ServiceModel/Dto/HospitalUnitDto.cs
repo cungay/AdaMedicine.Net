@@ -3,6 +3,7 @@ using System.Runtime.Serialization;
 
 namespace AdaMedicine.ServiceModel.Dto
 {
+    [DataContract]
     public class HospitalUnitDto
     {
         public HospitalUnitDto()
@@ -11,8 +12,10 @@ namespace AdaMedicine.ServiceModel.Dto
             this.Units = new List<UnitCategoryDto>();
         }
 
+        [DataMember]
         public UnitCategoryDto Category { get; set; }
 
+        [DataMember]
         public List<UnitCategoryDto> Units { get; set; }
     }
 }

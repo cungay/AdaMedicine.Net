@@ -1,0 +1,264 @@
+2021-03-15 16:56:44.709 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2021-03-15 16:56:44.732 +03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2021-03-15 16:56:44.733 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2021-03-15 16:56:44.733 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2021-03-15 16:56:44.733 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2021-03-15 16:56:44.734 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2021-03-15 16:56:44.734 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2021-03-15 16:57:20.548 +03:00 [DBG] Login Url: /Account/Login
+2021-03-15 16:57:20.549 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-03-15 16:57:20.550 +03:00 [DBG] Logout Url: /Account/Logout
+2021-03-15 16:57:20.550 +03:00 [DBG] ConsentUrl Url: /consent
+2021-03-15 16:57:20.551 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-03-15 16:57:20.551 +03:00 [DBG] Error Url: /home/error
+2021-03-15 16:57:20.551 +03:00 [DBG] Error Id Parameter: errorId
+2021-03-15 16:57:32.756 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-03-15 16:57:32.763 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-03-15 16:57:32.764 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-03-15 16:57:32.768 +03:00 [DBG] Start discovery request
+2021-03-15 17:11:52.591 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2021-03-15 17:11:52.610 +03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2021-03-15 17:11:52.611 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2021-03-15 17:11:52.612 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2021-03-15 17:11:52.612 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2021-03-15 17:11:52.612 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2021-03-15 17:11:52.612 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2021-03-15 17:11:52.861 +03:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address https://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Normal olarak her yuva adresi (iletişim kuralı/ağ adresi/bağlantı noktası) için yalnızca bir kullanıma izin veriliyor.
+ ---> System.Net.Sockets.SocketException (10048): Normal olarak her yuva adresi (iletişim kuralı/ağ adresi/bağlantı noktası) için yalnızca bir kullanıma izin veriliyor.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass29_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IEnumerable`1 listenOptions, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2021-03-15 17:12:10.236 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2021-03-15 17:12:10.276 +03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2021-03-15 17:12:10.282 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2021-03-15 17:12:10.283 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2021-03-15 17:12:10.284 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2021-03-15 17:12:10.285 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2021-03-15 17:12:10.285 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2021-03-15 17:12:10.541 +03:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address https://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Normal olarak her yuva adresi (iletişim kuralı/ağ adresi/bağlantı noktası) için yalnızca bir kullanıma izin veriliyor.
+ ---> System.Net.Sockets.SocketException (10048): Normal olarak her yuva adresi (iletişim kuralı/ağ adresi/bağlantı noktası) için yalnızca bir kullanıma izin veriliyor.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass29_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IEnumerable`1 listenOptions, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2021-03-15 17:12:47.174 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2021-03-15 17:12:47.197 +03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2021-03-15 17:12:47.198 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2021-03-15 17:12:47.198 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2021-03-15 17:12:47.198 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2021-03-15 17:12:47.198 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2021-03-15 17:12:47.198 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2021-03-15 17:12:59.543 +03:00 [DBG] Login Url: /Account/Login
+2021-03-15 17:12:59.545 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-03-15 17:12:59.546 +03:00 [DBG] Logout Url: /Account/Logout
+2021-03-15 17:12:59.546 +03:00 [DBG] ConsentUrl Url: /consent
+2021-03-15 17:12:59.547 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-03-15 17:12:59.547 +03:00 [DBG] Error Url: /home/error
+2021-03-15 17:12:59.547 +03:00 [DBG] Error Id Parameter: errorId
+2021-03-15 17:18:00.203 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2021-03-15 17:18:00.221 +03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2021-03-15 17:18:00.221 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2021-03-15 17:18:00.221 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2021-03-15 17:18:00.221 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2021-03-15 17:18:00.221 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2021-03-15 17:18:00.221 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2021-03-15 17:18:00.415 +03:00 [DBG] Login Url: /Account/Login
+2021-03-15 17:18:00.416 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-03-15 17:18:00.417 +03:00 [DBG] Logout Url: /Account/Logout
+2021-03-15 17:18:00.417 +03:00 [DBG] ConsentUrl Url: /consent
+2021-03-15 17:18:00.417 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-03-15 17:18:00.417 +03:00 [DBG] Error Url: /home/error
+2021-03-15 17:18:00.417 +03:00 [DBG] Error Id Parameter: errorId
+2021-03-15 19:10:00.102 +03:00 [INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+2021-03-15 19:10:00.123 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2021-03-15 19:10:00.125 +03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2021-03-15 19:10:00.125 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2021-03-15 19:10:00.125 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2021-03-15 19:10:00.125 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2021-03-15 19:10:00.125 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2021-03-15 19:10:00.125 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2021-03-15 19:10:00.259 +03:00 [DBG] Login Url: /Account/Login
+2021-03-15 19:10:00.260 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-03-15 19:10:00.260 +03:00 [DBG] Logout Url: /Account/Logout
+2021-03-15 19:10:00.260 +03:00 [DBG] ConsentUrl Url: /consent
+2021-03-15 19:10:00.260 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-03-15 19:10:00.260 +03:00 [DBG] Error Url: /home/error
+2021-03-15 19:10:00.261 +03:00 [DBG] Error Id Parameter: errorId
+2021-03-15 19:12:33.181 +03:00 [INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+2021-03-15 19:12:33.202 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2021-03-15 19:12:33.203 +03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2021-03-15 19:12:33.203 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2021-03-15 19:12:33.203 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2021-03-15 19:12:33.204 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2021-03-15 19:12:33.204 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2021-03-15 19:12:33.204 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2021-03-15 19:12:33.330 +03:00 [DBG] Login Url: /Account/Login
+2021-03-15 19:12:33.331 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-03-15 19:12:33.331 +03:00 [DBG] Logout Url: /Account/Logout
+2021-03-15 19:12:33.331 +03:00 [DBG] ConsentUrl Url: /consent
+2021-03-15 19:12:33.331 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-03-15 19:12:33.331 +03:00 [DBG] Error Url: /home/error
+2021-03-15 19:12:33.331 +03:00 [DBG] Error Id Parameter: errorId
+2021-03-16 11:52:33.691 +03:00 [INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+2021-03-16 11:52:33.714 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2021-03-16 11:52:33.716 +03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2021-03-16 11:52:33.716 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2021-03-16 11:52:33.716 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2021-03-16 11:52:33.716 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2021-03-16 11:52:33.716 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2021-03-16 11:52:33.716 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2021-03-16 11:52:33.892 +03:00 [DBG] Login Url: /Account/Login
+2021-03-16 11:52:33.893 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-03-16 11:52:33.893 +03:00 [DBG] Logout Url: /Account/Logout
+2021-03-16 11:52:33.893 +03:00 [DBG] ConsentUrl Url: /consent
+2021-03-16 11:52:33.893 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-03-16 11:52:33.893 +03:00 [DBG] Error Url: /home/error
+2021-03-16 11:52:33.893 +03:00 [DBG] Error Id Parameter: errorId
+2021-03-19 00:06:14.272 +03:00 [INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+2021-03-19 00:06:14.297 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2021-03-19 00:06:14.299 +03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2021-03-19 00:06:14.299 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2021-03-19 00:06:14.299 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2021-03-19 00:06:14.299 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2021-03-19 00:06:14.299 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2021-03-19 00:06:14.299 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2021-03-19 00:06:14.541 +03:00 [DBG] Login Url: /Account/Login
+2021-03-19 00:06:14.542 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-03-19 00:06:14.542 +03:00 [DBG] Logout Url: /Account/Logout
+2021-03-19 00:06:14.542 +03:00 [DBG] ConsentUrl Url: /consent
+2021-03-19 00:06:14.542 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-03-19 00:06:14.542 +03:00 [DBG] Error Url: /home/error
+2021-03-19 00:06:14.542 +03:00 [DBG] Error Id Parameter: errorId
+2021-03-30 04:46:30.791 +03:00 [INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+2021-03-30 04:46:30.815 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2021-03-30 04:46:30.817 +03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2021-03-30 04:46:30.817 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2021-03-30 04:46:30.817 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2021-03-30 04:46:30.817 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2021-03-30 04:46:30.817 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2021-03-30 04:46:30.817 +03:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2021-03-30 04:46:31.076 +03:00 [DBG] Login Url: /Account/Login
+2021-03-30 04:46:31.077 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-03-30 04:46:31.077 +03:00 [DBG] Logout Url: /Account/Logout
+2021-03-30 04:46:31.077 +03:00 [DBG] ConsentUrl Url: /consent
+2021-03-30 04:46:31.077 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-03-30 04:46:31.077 +03:00 [DBG] Error Url: /home/error
+2021-03-30 04:46:31.077 +03:00 [DBG] Error Id Parameter: errorId
+2021-03-30 04:46:35.530 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-03-30 04:46:35.532 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-03-30 04:46:35.532 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-03-30 04:46:35.533 +03:00 [DBG] Start discovery request
+2021-03-30 04:46:42.169 +03:00 [INF] AuthenticationScheme: idsrv was challenged.
+2021-03-30 04:46:44.994 +03:00 [INF] AuthenticationScheme: Facebook was challenged.
+2021-03-30 04:46:55.505 +03:00 [INF] AuthenticationScheme: Google was challenged.
+2021-03-30 04:47:04.161 +03:00 [INF] AuthenticationScheme: idsrv.external signed in.
+2021-03-30 04:47:04.175 +03:00 [DBG] External claims: ["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier: 107526541238998807300","http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: ihsan çungay","http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname: ihsan","http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname: çungay","http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress: cungay@gmail.com"]
+2021-03-30 04:47:04.184 +03:00 [DBG] Augmenting SignInContext
+2021-03-30 04:47:04.184 +03:00 [DBG] Adding amr claim with value: external
+2021-03-30 04:47:04.184 +03:00 [DBG] Adding auth_time claim with value: 1617068824
+2021-03-30 04:47:04.186 +03:00 [INF] AuthenticationScheme: idsrv signed in.
+2021-03-30 04:47:04.188 +03:00 [INF] AuthenticationScheme: idsrv.external signed out.
+2021-03-30 04:47:24.167 +03:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-03-30 04:47:24.188 +03:00 [INF] AuthenticationScheme: idsrv signed out.
+2021-03-30 04:47:24.192 +03:00 [DBG] SignOutCalled set; processing post-signout session cleanup.
+2021-03-30 04:47:29.543 +03:00 [INF] AuthenticationScheme: idsrv was challenged.
+2021-03-30 04:47:30.879 +03:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-03-30 04:47:33.723 +03:00 [INF] AuthenticationScheme: Facebook was challenged.
+2021-03-30 04:51:59.910 +03:00 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2021-03-30 04:51:59.916 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: The oauth state was missing or invalid.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-30 04:52:18.886 +03:00 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2021-03-30 04:52:18.887 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: The oauth state was missing or invalid.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-30 04:52:24.273 +03:00 [INF] AuthenticationScheme: Facebook was challenged.
+2021-03-30 04:52:27.564 +03:00 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2021-03-30 04:52:27.565 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: The oauth state was missing or invalid.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-30 04:52:32.387 +03:00 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2021-03-30 04:52:32.388 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: The oauth state was missing or invalid.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-30 04:52:39.190 +03:00 [INF] AuthenticationScheme: Facebook was challenged.
+2021-03-30 04:52:41.069 +03:00 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2021-03-30 04:52:41.070 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: The oauth state was missing or invalid.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-30 04:52:49.085 +03:00 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2021-03-30 04:52:49.085 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: The oauth state was missing or invalid.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-30 04:52:54.482 +03:00 [INF] AuthenticationScheme: Google was challenged.

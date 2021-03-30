@@ -20,4 +20,3 @@ D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.Service
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.ServiceModel\obj\Debug\net5.0\AdaMedicine.ServiceModel.dll
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.ServiceModel\obj\Debug\net5.0\ref\AdaMedicine.ServiceModel.dll
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.ServiceModel\obj\Debug\net5.0\AdaMedicine.ServiceModel.pdb
-D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Libraries\AdaMedicine.ServiceModel\obj\Debug\net5.0\AdaMedicine.ServiceModel.csprojAssemblyReference.cache

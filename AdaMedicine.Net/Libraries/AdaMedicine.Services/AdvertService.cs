@@ -4,6 +4,7 @@ using AdaMedicine.ServiceModel.Domain;
 using AdaMedicine.ServiceModel.Dto;
 using AdaMedicine.ServiceModel.Request;
 using System.Threading.Tasks;
+using System;
 
 namespace AdaMedicine.Services
 {
@@ -11,23 +12,26 @@ namespace AdaMedicine.Services
     {
         public async Task<SingleResponse<AdvertDtoWithHospital>> Get(GetAdvert request)
         {
+            if (request.Id.IsNull())
+                throw new ArgumentNullException(nameof(request.Id));
             var response = new SingleResponse<AdvertDtoWithHospital>();
             var query = Db.From<Advert>();
-            if (!request.Id.IsNull())
-                query.Where(p => p.Id == request.Id);
+            query.Where(p => p.Id == request.Id);
             query.Where(p => p.Published);
             query.Where(p => !p.Deleted);
-            response.Result = await Task.FromResult(Db.SingleAsync(query).Result.ConvertTo<AdvertDtoWithHospital>()) 
+            response.Result = await Task.FromResult(
+                Db.SingleAsync(query).Result.ConvertTo<AdvertDtoWithHospital>())
                 ?? new AdvertDtoWithHospital();
             return response;
         }
 
         public async Task<ListResponse<AdvertDto>> Get(GetAdverts request)
         {
+            if (request.HospitalId.IsNull())
+                throw new ArgumentNullException(nameof(request.HospitalId));
             var response = new ListResponse<AdvertDto>();
             var query = Db.From<Advert>();
-            if (!request.HospitalId.IsNull())
-                query.Where(p => p.HospitalId == request.HospitalId);
+            query.Where(p => p.HospitalId == request.HospitalId);
             query.Where(p => p.Published);
             query.Where(p => !p.Deleted);
             query.OrderBy(p => p.Id);

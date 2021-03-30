@@ -5,6 +5,7 @@ using AdaMedicine.ServiceModel.Request;
 using AdaMedicine.ServiceModel.Domain;
 using System.Linq;
 using System.Threading.Tasks;
+using System;
 
 namespace AdaMedicine.Services
 {
@@ -37,6 +38,8 @@ namespace AdaMedicine.Services
 
         public async Task<SingleResponse<StaffCategoryDto>> Get(GetStaffCategory request)
         {
+            if (request.Id.IsNull())
+                throw new ArgumentNullException(nameof(request.Id));
             ListResponse<StaffCategoryDto> categoriesResponse = await Gateway.SendAsync(new GetStaffCategories { Id = request.Id });
             StaffCategoryDto categoryDto = categoriesResponse.Result.SingleOrDefault() ?? new StaffCategoryDto();
             return new SingleResponse<StaffCategoryDto>()

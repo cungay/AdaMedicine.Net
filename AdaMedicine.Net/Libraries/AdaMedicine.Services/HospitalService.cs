@@ -5,6 +5,7 @@ using AdaMedicine.ServiceModel.Domain;
 using AdaMedicine.ServiceModel.Dto;
 using AdaMedicine.ServiceModel.Request;
 using System.Threading.Tasks;
+using System;
 
 namespace AdaMedicine.Services
 {
@@ -12,13 +13,16 @@ namespace AdaMedicine.Services
     {
         public async Task<SingleResponse<HospitalDto>> Get(GetHospital request)
         {
+            if (request.HospitalId.IsNull())
+                throw new ArgumentNullException(nameof(request.HospitalId));
             var response = new SingleResponse<HospitalDto>();
             var query = Db.From<Hospital>();
-            if (!request.HospitalId.IsNull())
-                query.Where(p => p.Id == request.HospitalId);
+            query.Where(p => p.Id == request.HospitalId);
             query.Where(p => p.Published);
             query.Where(p => !p.Deleted);
-            response.Result = await Task.FromResult(Db.SingleAsync(query).Result.ConvertTo<HospitalDto>()) ?? new HospitalDto();
+            response.Result = await Task.FromResult(
+                Db.SingleAsync(query).Result.ConvertTo<HospitalDto>()) 
+                ?? new HospitalDto();
             return response;
         }
 

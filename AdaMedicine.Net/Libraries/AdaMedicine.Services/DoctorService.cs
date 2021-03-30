@@ -13,10 +13,12 @@ namespace AdaMedicine.Services
     {
         public async Task<ListResponse<DoctorDto>> Get(GetDoctors request)
         {
+            /*
             if (request.HospitalId.IsNull())
                 throw new ArgumentNullException(nameof(request.HospitalId));
             if (request.UnitId.IsNull())
                 throw new ArgumentNullException(nameof(request.UnitId));
+            */
             var response = new ListResponse<DoctorDto>
             {
                 Result = await Task.FromResult(

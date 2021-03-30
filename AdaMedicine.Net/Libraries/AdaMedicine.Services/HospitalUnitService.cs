@@ -17,7 +17,7 @@ namespace AdaMedicine.Services
             var units = await Task.FromResult(
                 Db.SqlListAsync<UnitCategory>(sqlQuery,
                 new {
-                    categoryId = request.Id,
+                    categoryId = request.CategoryId,
                     hospitalId = request.HospitalId,
                     published = true,
                     deleted = false

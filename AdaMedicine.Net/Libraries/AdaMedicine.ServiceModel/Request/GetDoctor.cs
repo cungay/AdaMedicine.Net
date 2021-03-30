@@ -6,6 +6,6 @@ namespace AdaMedicine.ServiceModel.Request
     [Route("/doctors/{id}", "GET", Summary = "Get hospital doctor by id")]
     public class GetDoctor : IReturn<SingleResponse<DoctorDto>>
     {
-        public int? Id { get; set; }
+        public int Id { get; set; }
     }
 }

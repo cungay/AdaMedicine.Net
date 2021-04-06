@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -12,29 +12,31 @@
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <Reference Include="Ege.Net">
-      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.dll</HintPath>
+      <HintPath>..\..\..\..\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.dll</HintPath>
     </Reference>
     <Reference Include="Ege.Net.Client">
-      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net.Client\bin\Debug\netstandard2.0\Ege.Net.Client.dll</HintPath>
+      <HintPath>..\..\..\..\Ege.Net\Libraries\Ege.Net.Client\bin\Debug\netstandard2.0\Ege.Net.Client.dll</HintPath>
     </Reference>
     <Reference Include="Ege.Net.Common">
-      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.Common.dll</HintPath>
+      <HintPath>..\..\..\..\Ege.Net\Libraries\Ege.Net.Common\bin\Debug\netstandard2.0\Ege.Net.Common.dll</HintPath>
     </Reference>
     <Reference Include="Ege.Net.Interfaces">
-      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.Interfaces.dll</HintPath>
+      <HintPath>..\..\..\..\Ege.Net\Libraries\Ege.Net.Interfaces\bin\Debug\netstandard2.0\Ege.Net.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Ege.Net.Orm">
-      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Orm\Ege.Net.Orm.SqlServer\bin\Debug\netstandard2.0\Ege.Net.Orm.dll</HintPath>
+      <HintPath>..\..\..\..\Ege.Net\Libraries\Orm\Ege.Net.Orm\bin\Debug\netstandard2.0\Ege.Net.Orm.dll</HintPath>
     </Reference>
     <Reference Include="Ege.Net.Server">
-      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net.Server\bin\Debug\netstandard2.0\Ege.Net.Server.dll</HintPath>
+      <HintPath>..\..\..\..\Ege.Net\Libraries\Ege.Net.Server\bin\Debug\netstandard2.0\Ege.Net.Server.dll</HintPath>
     </Reference>
     <Reference Include="Ege.Net.Text">
-      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.Text.dll</HintPath>
+      <HintPath>..\..\..\..\Ege.Net\Libraries\Ege.Net.Text\bin\Debug\netstandard2.0\Ege.Net.Text.dll</HintPath>
     </Reference>
   </ItemGroup>
+  
+  
 
 </Project>

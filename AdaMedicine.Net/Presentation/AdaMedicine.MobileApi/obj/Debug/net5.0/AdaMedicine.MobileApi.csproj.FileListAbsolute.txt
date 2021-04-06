@@ -1,3 +1,9 @@
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\AdaMedicine.MobileApi.csprojAssemblyReference.cache
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\AdaMedicine.MobileApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\AdaMedicine.MobileApi.AssemblyInfoInputs.cache
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\AdaMedicine.MobileApi.AssemblyInfo.cs
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\AdaMedicine.MobileApi.csproj.CoreCompileInputs.cache
+D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\AdaMedicine.MobileApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\bin\Debug\net5.0\web.config
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\bin\Debug\net5.0\appsettings.Development.json
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\bin\Debug\net5.0\appsettings.json
@@ -43,12 +49,6 @@ D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.Mobi
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\bin\Debug\net5.0\Ege.Net.Server.pdb
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\bin\Debug\net5.0\Ege.Net.Text.pdb
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\bin\Debug\net5.0\Ege.Net.Redis.pdb
-D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\AdaMedicine.MobileApi.csprojAssemblyReference.cache
-D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\AdaMedicine.MobileApi.GeneratedMSBuildEditorConfig.editorconfig
-D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\AdaMedicine.MobileApi.AssemblyInfoInputs.cache
-D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\AdaMedicine.MobileApi.AssemblyInfo.cs
-D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\AdaMedicine.MobileApi.csproj.CoreCompileInputs.cache
-D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\AdaMedicine.MobileApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\staticwebassets\AdaMedicine.MobileApi.StaticWebAssets.Manifest.cache
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\staticwebassets\AdaMedicine.MobileApi.StaticWebAssets.xml
 D:\Projects\GitHub\AdaMedicine.Net\AdaMedicine.Net\Presentation\AdaMedicine.MobileApi\obj\Debug\net5.0\scopedcss\bundle\AdaMedicine.MobileApi.styles.css

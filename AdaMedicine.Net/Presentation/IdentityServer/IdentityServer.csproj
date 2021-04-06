@@ -21,7 +21,7 @@
   
   <ItemGroup>
     <Reference Include="Ege.Net.Common">
-      <HintPath>C:\Users\ihsan cungay\source\repos\Ege.Net\Libraries\Ege.Net\bin\Debug\netstandard2.0\Ege.Net.Common.dll</HintPath>
+      <HintPath>..\..\..\..\Ege.Net\Libraries\Ege.Net.Common\bin\Debug\netstandard2.0\Ege.Net.Common.dll</HintPath>
     </Reference>
   </ItemGroup>
 

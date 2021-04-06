@@ -8,6 +8,7 @@ using System;
 
 namespace AdaMedicine.Services
 {
+    [Authenticate]
     public class AdvertService : RestService
     {
         public async Task<SingleResponse<AdvertDtoWithHospital>> Get(GetAdvert request)
